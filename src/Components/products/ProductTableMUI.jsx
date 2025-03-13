@@ -53,19 +53,41 @@ const columns = [
 ];
 
 const dataGridStyles = {
-  bgcolor: "#1F2937", 
+  bgcolor: "#1F2937",
   color: "#E5E7EB",
   borderColor: "#374151",
-"& .MuiDataGrid-columnHeaders": {
-    color: "black", 
-    backgroundColor: "#111", 
-  },
+
   "& .MuiDataGrid-cell": {
-    borderBottom: "1px solid #374151",
+    borderBottom: "0.5px solid #374151",
     color: "#E5E7EB",
+    display: "flex", 
+    alignItems: "center", 
   },
-  "& .MuiDataGrid-row:hover": {
-    backgroundColor: "#374151",
+
+  "& .MuiDataGrid-columnHeaders": {
+    color: "white",
+  borderColor: "#374151",
+    borderBottom: "0.5px solid #374151",
+  },
+  "& .MuiDataGrid-row": {
+    borderBottom: "1px solid rgba(68, 65, 65, 0.2)", 
+  },
+  
+  "& .MuiDataGrid-footerContainer": {
+    backgroundColor: "#111827",
+    color: "white",
+    borderTop: "0.5px solidrgb(58, 60, 62)",
+    "& .MuiTablePagination-root, & .MuiTablePagination-caption, & .MuiSvgIcon-root": {
+      color: "white",
+    },
+  },
+
+  "& .MuiDataGrid-row": {
+    borderBottom: "0.3px solid #374151",
+  },
+
+  "& .MuiDataGrid-columnSeparator": {
+    "& svg": { width: "0.3px" },
   },
 };
 
